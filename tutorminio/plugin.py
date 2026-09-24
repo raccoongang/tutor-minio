@@ -31,8 +31,8 @@ config: dict[str, dict[str, t.Any]] = {
         # We must stick to these older releases because they are the last ones that support gateway mode to Azure:
         # https://blog.min.io/deprecation-of-the-minio-gateway/
         # https://min.io/docs/minio/linux/operations/install-deploy-manage/migrate-fs-gateway.html
-        "DOCKER_IMAGE": "docker.io/minio/minio:RELEASE.2022-03-26T06-49-28Z.hotfix.26ec6a857",
-        "MC_DOCKER_IMAGE": "docker.io/minio/mc:RELEASE.2022-03-31T04-55-30Z",
+        "DOCKER_IMAGE": "pgsty/minio:RELEASE.2026-08-04T00-00-00Z",
+        "MC_DOCKER_IMAGE": "pgsty/mc:RELEASE.2026-09-16T00-00-00Z",
         "GATEWAY": None,
         "DISCOVERY_BUCKET_NAME": "{% if 'discovery' in PLUGINS %}discoveryuploads{% endif %}",
     },
